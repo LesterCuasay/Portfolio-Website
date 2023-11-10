@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
 
 :root {
-  --bg-color: #120926;
-  --second-bg-color: #150e42;
+  --bg-color: #221245;
+  --second-bg-color: #281d47;
   --text-color: #fff;
   --second-text-color: #58b5da;
 }
@@ -312,4 +312,15 @@ span {
   margin-top: 2rem;
   cursor: pointer;
   border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 9%;
+}
+
+.footer-text p {
+  font-size: 1.4rem;
 }
