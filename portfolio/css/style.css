@@ -159,8 +159,44 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.projects h2 {
+    margin-bottom: 5rem;
+}
+
 .projects-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projects-container .projects-box {
+    flex: 1 1 30rem;
+    background-color: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.projects-container .projects-box:hover {
+    border-color: var(--second-text-color);
+    transform: scale(1.02);
+}
+
+.projects-box h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+.projects-box i {
+    font-size: 2.5rem;
+}
+
+.projects-box p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
 }
