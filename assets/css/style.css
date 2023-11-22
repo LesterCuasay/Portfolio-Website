@@ -45,6 +45,11 @@ a {
   background-color: var(--second-bg-color);
 }
 
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
@@ -135,42 +140,44 @@ span {
 }
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--second-bg-color);
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  gap: 2rem;
 }
 
 .heading {
-    text-align: center;
-    font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .about-content h2 {
-    text-align: left;
-    line-height: 1.2;
+  text-align: left;
+  line-height: 1.2;
 }
 
 .about-content h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
 }
 
 .projects h2 {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
+
 .projects-container .projects-box {
   position: relative;
   border-radius: 2rem;
@@ -183,7 +190,7 @@ span {
 
 .projects-box img {
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .projects-box:hover img {
@@ -196,7 +203,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--second-text-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--second-text-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +211,7 @@ span {
   text-align: center;
   padding: 0 2rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .projects-box:hover .projects-layer {
@@ -230,7 +237,7 @@ span {
 .projects-layer p {
   margin-top: 1rem;
   font-size: 1.2rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
 
 .projects-layer .projects-links a {
@@ -283,7 +290,7 @@ span {
   font-size: 1.6rem;
   background-color: var(--bg-color);
   border-radius: 0.8rem;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   color: var(--text-color);
   border: var(--second-bg-color);
   box-shadow: 0 0 1rem var(--bg-color);
@@ -323,4 +330,50 @@ span {
 
 .footer-text p {
   font-size: 1.4rem;
+}
+
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 1rem 3%;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
 }
