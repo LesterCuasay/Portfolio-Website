@@ -171,10 +171,8 @@ span {
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -184,8 +182,6 @@ span {
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
-  height: 350px;
-  width: 500px;
 }
 
 .projects-box img {
@@ -219,11 +215,11 @@ span {
 }
 
 .projects-layer h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .projects-layer .icons {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   display: flex;
 }
 
@@ -236,7 +232,7 @@ span {
 
 .projects-layer p {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.3rem 0 1rem;
 }
 
@@ -334,9 +330,15 @@ span {
 
 /* Breakpoints */
 
+@media (max-width: 1440px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 80%;
   }
 }
 
@@ -351,6 +353,11 @@ span {
 }
 
 @media (max-width: 768px) {
+
+  html {
+    font-size: 70%;
+  }
+
   #menu-icon {
     display: block;
   }
