@@ -334,6 +334,9 @@ span {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .projects {
+    padding-bottom: 7rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -353,7 +356,6 @@ span {
 }
 
 @media (max-width: 768px) {
-
   html {
     font-size: 70%;
   }
@@ -382,5 +384,24 @@ span {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 60%;
+  }
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
   }
 }
