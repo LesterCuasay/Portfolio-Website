@@ -139,6 +139,20 @@ span {
   transform: translateY(2px);
 }
 
+.top {
+  text-align: center;
+  margin: 5rem 0 5rem 0;
+}
+.back-to-top-btn {
+  text-align: center;
+  padding: 1rem 2.8rem;
+  background-color: var(--second-text-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
 .about {
   display: flex;
   justify-content: center;
@@ -393,6 +407,10 @@ span {
   }
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact {
+    min-height: auto;
   }
 }
 

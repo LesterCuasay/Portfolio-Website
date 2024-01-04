@@ -57,20 +57,17 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(".projects-box, .contact form", { origin: "bottom" });
-ScrollReveal().reveal(".home-content h1 ", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content ", { origin: "right" });
+ScrollReveal().reveal(".projects-box, .contact-box", { origin: "bottom" });
+ScrollReveal().reveal(".home-content h1, .home-content p, .about-content ", {
+  origin: "left",
+});
 
 /* Typed JS */
 
-const typed = new Typed('.multiple-text', {
-  strings: [
-    'Junior Full Stack Developer',
-    'Junior Frontend Developer',
-  ],
+const typed = new Typed(".multiple-text", {
+  strings: ["Junior Full Stack Developer", "Junior Frontend Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
-})
-
+});
