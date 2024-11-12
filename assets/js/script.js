@@ -71,3 +71,20 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+/* Read More */
+
+function toggleText(event) {
+  event.preventDefault();
+
+  let moreText = document.getElementById("moreText");
+  let btnText = event.target;
+
+  if (moreText.style.display == "none") {
+    moreText.style.display = "inline";
+    btnText.textContent = "Read Less";
+  } else {
+    moreText.style.display = "none";
+    btnText.textContent = "Read More";
+  }
+}
